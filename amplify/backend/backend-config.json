@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "heraspace57c4d3a0": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "native": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-heraspace-native-143748-authRole",
+      "UnauthRoleArn": "arn:aws:iam::979848182531:role/amplify-heraspace-native-143748-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::979848182531:role/amplify-heraspace-native-143748-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-heraspace-native-143748-deployment",
+      "UnauthRoleName": "amplify-heraspace-native-143748-unauthRole",
+      "StackName": "amplify-heraspace-native-143748",
+      "StackId": "arn:aws:cloudformation:eu-central-1:979848182531:stack/amplify-heraspace-native-143748/79592fe0-5d5a-11eb-be33-02665a1fbcc8",
+      "AmplifyAppId": "djq64phjdolnn"
+    },
+    "categories": {
+      "auth": {
+        "heraspace57c4d3a0": {}
+      }
+    }
+  }
+}
