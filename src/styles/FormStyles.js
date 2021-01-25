@@ -31,7 +31,7 @@ export const FormStyles = StyleSheet.create({
     borderRadius: 8,
   },
   button: {
-    backgroundColor: 'royalblue',
+    backgroundColor: 'lightseagreen',
     height: 50,
     width: 350,
     alignItems: 'center',

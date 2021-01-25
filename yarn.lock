@@ -2243,6 +2243,18 @@
     "@types/yargs" "^15.0.0"
     "chalk" "^3.0.0"
 
+"@mapbox/geo-viewport@>= 0.4.0":
+  "integrity" "sha512-5g6eM3EOSl7+0p0VY+vHWEYjUlNzof936VKHTi/NuJVABjbYe8D2NAVJ0qt5C9Np4glUlhKFepgAgQ0OEybrjQ=="
+  "resolved" "https://registry.npmjs.org/@mapbox/geo-viewport/-/geo-viewport-0.4.1.tgz"
+  "version" "0.4.1"
+  dependencies:
+    "@mapbox/sphericalmercator" "~1.1.0"
+
+"@mapbox/sphericalmercator@~1.1.0":
+  "integrity" "sha512-pEsfZyG4OMThlfFQbCte4gegvHUjxXCjz0KZ4Xk8NdOYTQBLflj6U8PL05RPAiuRAMAQNUUKJuL6qYZ5Y4kAWA=="
+  "resolved" "https://registry.npmjs.org/@mapbox/sphericalmercator/-/sphericalmercator-1.1.0.tgz"
+  "version" "1.1.0"
+
 "@react-native-community/cli-debugger-ui@^4.13.1":
   "integrity" "sha512-UFnkg5RTq3s2X15fSkrWY9+5BKOFjihNSnJjTV2H5PtTUFbd55qnxxPw8CxSfK0bXb1IrSvCESprk2LEpqr5cg=="
   "resolved" "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-4.13.1.tgz"
@@ -2397,6 +2409,20 @@
   "resolved" "https://registry.npmjs.org/@react-native-community/netinfo/-/netinfo-5.9.10.tgz"
   "version" "5.9.10"
 
+"@react-native-mapbox-gl/maps@^8.1.0":
+  "integrity" "sha512-0UqiAbs7Ex4k1JodSR7nuXSmzjHUabX0xtskJz+PbsfW/JRMd5VV3yP7G8oNlRMVqknf/cp4NW2OHZ7d9E8htg=="
+  "resolved" "https://registry.npmjs.org/@react-native-mapbox-gl/maps/-/maps-8.1.0.tgz"
+  "version" "8.1.0"
+  dependencies:
+    "@mapbox/geo-viewport" ">= 0.4.0"
+    "@turf/along" ">= 4.0.0 <7.0.0"
+    "@turf/distance" ">= 4.0.0 <7.0.0"
+    "@turf/helpers" ">= 4.6.0 <7.0.0"
+    "@turf/length" ">= 4.6.0 <7.0.0"
+    "@turf/nearest-point-on-line" ">= 4.0.0 <7.0.0"
+    "@types/geojson" "^7946.0.7"
+    "debounce" "^1.2.0"
+
 "@react-navigation/bottom-tabs@^5.11.6":
   "integrity" "sha512-CodrgaXejXGjC4EzjDfxxXj2AEOu3G3mL9UYhiBIGHWAufnnRhiJT1YTLX/baGgaWhlqy1PQi7Gs0IwDXsGSuA=="
   "resolved" "https://registry.npmjs.org/@react-navigation/bottom-tabs/-/bottom-tabs-5.11.6.tgz"
@@ -2469,6 +2495,110 @@
   "resolved" "https://registry.npmjs.org/@sinonjs/text-encoding/-/text-encoding-0.7.1.tgz"
   "version" "0.7.1"
 
+"@turf/along@>= 4.0.0 <7.0.0":
+  "integrity" "sha512-2j0nHp38IuzESyv5/9hLYM2MuUe155Kw390lkQtiLjhRtTeYQNEaRy+uhZhf3/DWrjGULH1HatLc5j0CmiwrJA=="
+  "resolved" "https://registry.npmjs.org/@turf/along/-/along-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/bearing" "^6.3.0"
+    "@turf/destination" "^6.3.0"
+    "@turf/distance" "^6.3.0"
+    "@turf/helpers" "^6.3.0"
+    "@turf/invariant" "^6.3.0"
+
+"@turf/bbox@*":
+  "integrity" "sha512-N4ue5Xopu1qieSHP2MA/CJGWHPKaTrVXQJjzHRNcY1vtsO126xbSaJhWUrFc5x5vVkXp0dcucGryO0r5m4o/KA=="
+  "resolved" "https://registry.npmjs.org/@turf/bbox/-/bbox-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/helpers" "^6.3.0"
+    "@turf/meta" "^6.3.0"
+
+"@turf/bearing@^6.3.0":
+  "integrity" "sha512-apuUm9xN6VQLO33m7F2mmzlm3dHfeesJjMSzh9iehGtgmp1IaVndjdcIvs0ieiwm8bN9UhwXpfPtO3pV0n9SFw=="
+  "resolved" "https://registry.npmjs.org/@turf/bearing/-/bearing-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/helpers" "^6.3.0"
+    "@turf/invariant" "^6.3.0"
+
+"@turf/destination@^6.3.0":
+  "integrity" "sha512-aLt3U/XkJWyZW08Ln1qZwBNAGh27yhmYLu892+dBj3gKP6UUiR6ZopXxrBwjBVe00A6k2ktftKDn79qe0hptuw=="
+  "resolved" "https://registry.npmjs.org/@turf/destination/-/destination-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/helpers" "^6.3.0"
+    "@turf/invariant" "^6.3.0"
+
+"@turf/distance@^6.3.0", "@turf/distance@>= 4.0.0 <7.0.0":
+  "integrity" "sha512-basi24ssNFnH3iXPFjp/aNUrukjObiFWoIyDRqKyBJxVwVOwAWvfk4d38QQyBj5nDo5IahYRq/Q+T47/5hSs9w=="
+  "resolved" "https://registry.npmjs.org/@turf/distance/-/distance-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/helpers" "^6.3.0"
+    "@turf/invariant" "^6.3.0"
+
+"@turf/helpers@^6.3.0", "@turf/helpers@>= 4.6.0 <7.0.0", "@turf/helpers@6.x":
+  "integrity" "sha512-kr6KuD4Z0GZ30tblTEvi90rvvVNlKieXuMC8CTzE/rVQb0/f/Cb29zCXxTD7giQTEQY/P2nRW23wEqqyNHulCg=="
+  "resolved" "https://registry.npmjs.org/@turf/helpers/-/helpers-6.3.0.tgz"
+  "version" "6.3.0"
+
+"@turf/invariant@^6.3.0":
+  "integrity" "sha512-2OFOi9p+QOrcIMySEnr+WlOiKaFZ1bY56jA98YyECewJHfhPFWUBZEhc4nWGRT0ahK08Vus9+gcuBX8QIpCIIw=="
+  "resolved" "https://registry.npmjs.org/@turf/invariant/-/invariant-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/helpers" "^6.3.0"
+
+"@turf/length@>= 4.6.0 <7.0.0":
+  "integrity" "sha512-91MHtigpV7mbrMW3xyaPVtLWQU3p487t3YHU4vdxih03p+dFI512dX/FtWbd9LNgrtBt4PM1uo1WmafGvfStKA=="
+  "resolved" "https://registry.npmjs.org/@turf/length/-/length-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/distance" "^6.3.0"
+    "@turf/helpers" "^6.3.0"
+    "@turf/meta" "^6.3.0"
+
+"@turf/line-intersect@^6.3.0":
+  "integrity" "sha512-3naxR7XpkPd2vst3Mw6DFry4C9m3o0/f2n/xu5UAyxb88Ie4m2k+1eqkhzMMx/0L+E6iThWpLx7DASM6q6o9ow=="
+  "resolved" "https://registry.npmjs.org/@turf/line-intersect/-/line-intersect-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/helpers" "^6.3.0"
+    "@turf/invariant" "^6.3.0"
+    "@turf/line-segment" "^6.3.0"
+    "@turf/meta" "^6.3.0"
+    "geojson-rbush" "3.x"
+
+"@turf/line-segment@^6.3.0":
+  "integrity" "sha512-M+aDy83V+E7jYWNaf+b+A88yhnMrJhyg/lhAj6mU6UeB2PbruXB2qgSmmVDSE2dIknOvZZuIWNzEzUI07RO2kw=="
+  "resolved" "https://registry.npmjs.org/@turf/line-segment/-/line-segment-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/helpers" "^6.3.0"
+    "@turf/invariant" "^6.3.0"
+    "@turf/meta" "^6.3.0"
+
+"@turf/meta@^6.3.0", "@turf/meta@6.x":
+  "integrity" "sha512-qBJjaAJS9H3ap0HlGXyF/Bzfl0qkA9suafX/jnDsZvWMfVLt+s+o6twKrXOGk5t7nnNON2NFRC8+czxpu104EQ=="
+  "resolved" "https://registry.npmjs.org/@turf/meta/-/meta-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/helpers" "^6.3.0"
+
+"@turf/nearest-point-on-line@>= 4.0.0 <7.0.0":
+  "integrity" "sha512-b4C9Md1VbGn9chMgdSj2grJD4w4t0owEWOKEBwOZfdhrcksyOedVvKB7XqOFdj/8Jitel40EKAC5LQTNu24kEQ=="
+  "resolved" "https://registry.npmjs.org/@turf/nearest-point-on-line/-/nearest-point-on-line-6.3.0.tgz"
+  "version" "6.3.0"
+  dependencies:
+    "@turf/bearing" "^6.3.0"
+    "@turf/destination" "^6.3.0"
+    "@turf/distance" "^6.3.0"
+    "@turf/helpers" "^6.3.0"
+    "@turf/invariant" "^6.3.0"
+    "@turf/line-intersect" "^6.3.0"
+    "@turf/meta" "^6.3.0"
+
 "@types/babel__core@^7.1.7":
   "integrity" "sha512-wMTHiiTiBAAPebqaPiPDLFA4LYPKr6Ph0Xq/6rq1Ur3v66HXyG+clfR9CNETkD7MQS8ZHvpQOtA53DLws5WAEQ=="
   "resolved" "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.12.tgz"
@@ -2511,6 +2641,11 @@
   "integrity" "sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag=="
   "resolved" "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz"
   "version" "1.0.0"
+
+"@types/geojson@^7946.0.7":
+  "integrity" "sha512-wE2v81i4C4Ol09RtsWFAqg3BUitWbHSpSlIo+bNdsCJijO9sjme+zm+73ZMCa/qMC8UEERxzGbvmr1cffo2SiQ=="
+  "resolved" "https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.7.tgz"
+  "version" "7946.0.7"
 
 "@types/graceful-fs@^4.1.2":
   "integrity" "sha512-mWA/4zFQhfvOA8zWkXobwJvBD7vzcxgrOQ0J5CH1votGqdq9m7+FwtGaqyCZqC3NyyBkc9z4m+iry4LlqcMWJg=="
@@ -4110,6 +4245,11 @@
   "resolved" "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.4.tgz"
   "version" "1.10.4"
 
+"debounce@^1.2.0":
+  "integrity" "sha512-mYtLl1xfZLi1m4RtQYlZgJUNQjl4ZxVnHzIR8nLLgi4q1YT8o/WM+MK/f8yfcc9s5Ir5zRaPZyZU6xs1Syoocg=="
+  "resolved" "https://registry.npmjs.org/debounce/-/debounce-1.2.0.tgz"
+  "version" "1.2.0"
+
 "debug@^2.2.0", "debug@^2.3.3", "debug@^2.6.8", "debug@2.6.9":
   "integrity" "sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA=="
   "resolved" "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz"
@@ -5024,6 +5164,16 @@
   "integrity" "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg=="
   "resolved" "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.2.tgz"
   "version" "1.0.0-beta.2"
+
+"geojson-rbush@3.x":
+  "integrity" "sha512-grkfdg3HIeTjwTfiJe5FT8+fGU3fABCc+vRJDBwdQz9kkLF0Sbif2gs2JUzjewwgmnvLGy9fInySDeADoNuk7w=="
+  "resolved" "https://registry.npmjs.org/geojson-rbush/-/geojson-rbush-3.1.2.tgz"
+  "version" "3.1.2"
+  dependencies:
+    "@turf/bbox" "*"
+    "@turf/helpers" "6.x"
+    "@turf/meta" "6.x"
+    "rbush" "^2.0.0"
 
 "get-caller-file@^2.0.1", "get-caller-file@^2.0.5":
   "integrity" "sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg=="
@@ -7332,6 +7482,11 @@
   dependencies:
     "is-wsl" "^1.1.0"
 
+"opencollective-postinstall@^2.0.2":
+  "integrity" "sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q=="
+  "resolved" "https://registry.npmjs.org/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz"
+  "version" "2.0.3"
+
 "optionator@^0.8.1", "optionator@^0.8.3":
   "integrity" "sha512-+IW9pACdk3XWmmTXG8m3upGUJst5XRGzxMRjXzAuJ1XnIFNvfhjjIuYkDvysnPQ7qzqVzLt78BCruntqRhWQbA=="
   "resolved" "https://registry.yarnpkg.com/optionator/-/optionator-0.8.3.tgz"
@@ -7634,7 +7789,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.6.2", "prop-types@^15.7.2":
+"prop-types@^15.6.2", "prop-types@^15.7.2", "prop-types@>=15.5.8":
   "integrity" "sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ=="
   "resolved" "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -7690,10 +7845,22 @@
   "resolved" "https://registry.npmjs.org/querystring/-/querystring-0.2.0.tgz"
   "version" "0.2.0"
 
+"quickselect@^1.0.1":
+  "integrity" "sha512-qN0Gqdw4c4KGPsBOQafj6yj/PA6c/L63f6CaZ/DCF/xF4Esu3jVmKLUDYxghFx8Kb/O7y9tI7x2RjTSXwdK1iQ=="
+  "resolved" "https://registry.npmjs.org/quickselect/-/quickselect-1.1.1.tgz"
+  "version" "1.1.1"
+
 "range-parser@~1.2.1":
   "integrity" "sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg=="
   "resolved" "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz"
   "version" "1.2.1"
+
+"rbush@^2.0.0":
+  "integrity" "sha512-XBOuALcTm+O/H8G90b6pzu6nX6v2zCKiFG4BJho8a+bY6AER6t8uQUZdi5bomQc0AprCWhEGa7ncAbbRap0bRA=="
+  "resolved" "https://registry.npmjs.org/rbush/-/rbush-2.0.2.tgz"
+  "version" "2.0.2"
+  dependencies:
+    "quickselect" "^1.0.1"
 
 "react-devtools-core@^4.6.0":
   "integrity" "sha512-sXbBjGAWcf9HAblTP/zMtFhGHqxAfIR+GPxONZsSGN9FHnF4635dx1s2LdQWG9rJ+Ehr3nWg+BUAB6P78my5PA=="
@@ -7725,6 +7892,14 @@
   "version" "1.5.1"
   dependencies:
     "fast-base64-decode" "^1.0.0"
+
+"react-native-inappbrowser-reborn@^3.5.1":
+  "integrity" "sha512-pEM9DSvW3LYoI7x1sfr4GtTA1/BSzSoQvHeNRtbJwOpujgRBqnEQrapBwC/24l2pIRhKDWmXGfqc12478IXY3Q=="
+  "resolved" "https://registry.npmjs.org/react-native-inappbrowser-reborn/-/react-native-inappbrowser-reborn-3.5.1.tgz"
+  "version" "3.5.1"
+  dependencies:
+    "invariant" "^2.2.4"
+    "opencollective-postinstall" "^2.0.2"
 
 "react-native-iphone-x-helper@^1.3.0":
   "integrity" "sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg=="
@@ -7762,7 +7937,7 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native@*", "react-native@>=0.42.0", "react-native@>=0.56", "react-native@>=0.57", "react-native@>=0.59", "react-native@>=0.62.0-rc.0 <0.64.0", "react-native@0.63.4":
+"react-native@*", "react-native@>=0.42.0", "react-native@>=0.56", "react-native@>=0.57", "react-native@>=0.59", "react-native@>=0.59.9", "react-native@>=0.62.0-rc.0 <0.64.0", "react-native@0.63.4":
   "integrity" "sha512-I4kM8kYO2mWEYUFITMcpRulcy4/jd+j9T6PbIzR0FuMcz/xwd+JwHoLPa1HmCesvR1RDOw9o4D+OFLwuXXfmGw=="
   "resolved" "https://registry.yarnpkg.com/react-native/-/react-native-0.63.4.tgz"
   "version" "0.63.4"
@@ -7810,7 +7985,7 @@
     "react-is" "^16.8.6"
     "scheduler" "^0.19.1"
 
-"react@*", "react@^16.0", "react@^16.13.1", "react@^16.8.0 || ^17.0.0", "react@16.13.1":
+"react@*", "react@^16.0", "react@^16.13.1", "react@^16.6.1", "react@^16.8.0 || ^17.0.0", "react@16.13.1":
   "integrity" "sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w=="
   "resolved" "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz"
   "version" "16.13.1"
